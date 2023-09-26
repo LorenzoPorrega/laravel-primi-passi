@@ -17,11 +17,19 @@
 </head>
 <body>
   <div class="container text-center mt-5">
-    <ul>
+    <div class="row g-2">
       @foreach ($contacts as $singleContact)
-        <li>{{ $singleContact }}</li>
+        <div class="col-6">
+          <a href="">
+            <div class="card">
+              <div class="card-body">
+                {{ $singleContact }}
+              </div>
+            </div>
+          </a>
+        </div>
       @endforeach
-    </ul>
+    </div>
   </div>
 </body>
 <script src="./js/main.js"></script>

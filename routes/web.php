@@ -20,12 +20,12 @@ Route::get('/', function () {
 Route::get('/contacts', function () {
     $data = [
         "contacts" => [
-            "paye" => "clown",
-            "salva" => "clown",
-            "giugiu" => "clown",
-            "andry" => "clown",
-            "vale" => "clown",
-            "ricks" => "clown"
+            "paye" => "Pietro",
+            "salva" => "Salvatore",
+            "giugiu" => "Giulia",
+            "andry" => "Andrea",
+            "vale" => "Valerio",
+            "ricks" => "Riccardo"
         ]
     ];
     return view('contacts', $data);
